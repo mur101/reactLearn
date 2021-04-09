@@ -32,7 +32,7 @@ class MainContents extends React.Component{
         return (
         <div>
             <button type="button" className="btn btn-primary" onClick={this.showModalBtn}>Запустить модальное окно</button>
-            <ModalWindow show={this.state.showModal} onHide={this.hideModal} actionFunc={this.getWeather}/>
+            <ModalWindow onShow={this.state.showModal} onHide={this.hideModal} getWeather={this.getWeather}/>
         </div>
         )
     }

@@ -6,7 +6,7 @@ class ModalWindow extends React.Component{
     render() {
         return(
             <>
-                {this.props.show && (<div className="modal" tabIndex="-1">
+                {this.props.onShow && (<div className="modal" tabIndex="-1">
                     <div className="modal-dialog">
                         <div className="modal-content">
                             <div className="modal-header">
@@ -19,7 +19,7 @@ class ModalWindow extends React.Component{
                                 <p>Modal body text goes here.</p>
                             </div>
                             <div className="modal-footer">
-                                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal" onClick={this.props.actionFunc}>Ок
+                                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal" onClick={this.props.getWeather}>Ок
                                 </button>
                                 <button type="button" className="btn btn-primary" onClick={this.props.onHide}>Отмена</button>
                             </div>
